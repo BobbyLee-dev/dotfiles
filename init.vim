@@ -15,5 +15,11 @@ let g:coc_global_extensions = [
   \ ]
 call plug#end()
 
+set tabstop=2
+set softtabstop=0 noexpandtab
+set shiftwidth=2
+
+imap ll <right>
+
 colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
