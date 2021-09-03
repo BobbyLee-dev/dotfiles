@@ -31,3 +31,4 @@ set nowrap
 colorscheme gruvbox
 
 map <silent> <C-n> :NERDTreeFocus<CR>
+nmap zz :update<cr>
