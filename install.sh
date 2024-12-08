@@ -26,9 +26,10 @@ create_symlink() {
 create_symlink "$DOTFILES_DIR/nvim" "$HOME/.config/nvim"
 
 # Aerospace configuration
-create_symlink "$DOTFILES_DIR/aerospace" "$HOME/.config/aerospace"
+create_symlink "$DOTFILES_DIR/aerospace/.aerospace.toml" "$HOME/.aerospace.toml"
 
-# Zsh configuration (moved to .config/zsh)
+# Wezterm configuration
+create_symlink "$DOTFILES_DIR/.wezterm.lua" "$HOME/.wezterm.lua"
 
 # Add more configurations as needed
 # create_symlink "$DOTFILES_DIR/some_other_config" "$HOME/.some_other_config"
