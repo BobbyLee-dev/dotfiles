@@ -31,6 +31,9 @@ create_symlink "$DOTFILES_DIR/aerospace/.aerospace.toml" "$HOME/.aerospace.toml"
 # Wezterm configuration
 create_symlink "$DOTFILES_DIR/.wezterm.lua" "$HOME/.wezterm.lua"
 
+# zsh configuration
+create_symlink "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+
 # Add more configurations as needed
 # create_symlink "$DOTFILES_DIR/some_other_config" "$HOME/.some_other_config"
 
