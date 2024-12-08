@@ -33,6 +33,7 @@ create_symlink "$DOTFILES_DIR/.wezterm.lua" "$HOME/.wezterm.lua"
 
 # zsh configuration
 create_symlink "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+create_symlink "$DOTFILES_DIR/.zprofile" "$HOME/.zprofile"
 
 # Add more configurations as needed
 # create_symlink "$DOTFILES_DIR/some_other_config" "$HOME/.some_other_config"
