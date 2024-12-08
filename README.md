@@ -24,7 +24,7 @@ These are my personal dotfiles, containing configurations for various tools and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+git clone https://github.com/Bobbylee-dev/dotfiles.git ~/dotfiles
 
 # Navigate to the dotfiles directory
 cd ~/dotfiles
