@@ -48,17 +48,7 @@ export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Powerlevel10k
-if [ -d "/opt/homebrew/share/powerlevel10k" ]; then
-  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-fi
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# Plugins (check dynamically)
-if [ -d "/opt/homebrew/share/zsh-autosuggestions" ]; then
-  source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-fi
-if [ -d "/opt/homebrew/share/zsh-syntax-highlighting" ]; then
-  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-fi
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
