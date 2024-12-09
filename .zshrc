@@ -52,3 +52,4 @@ export NVM_DIR="${HOME}/.nvm"
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
