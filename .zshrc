@@ -36,22 +36,10 @@ bindkey '^[[B' history-search-forward
 
 # Aliases
 alias ls="eza --icons=always"
-alias cd="z"
-
-# Zoxide configuration
-eval "$(zoxide init zsh)"
 
 # NVM configuration (ensure directory is portable)
 export NVM_DIR="${HOME}/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-# Herd configuration (update paths dynamically)
-if [ -d "/Applications/Herd.app" ]; then
-  export HERD_PHP_83_INI_SCAN_DIR="${HOME}/Library/Application Support/Herd/config/php/83/"
-  export PATH="${HOME}/Library/Application Support/Herd/bin/":$PATH
-  [[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && \
-      builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
-fi
 
 # Powerlevel10k
 if [ -d "/opt/homebrew/share/powerlevel10k" ]; then
