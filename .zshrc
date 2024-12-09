@@ -35,7 +35,7 @@ bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
 # Aliases
-alias ls="eza --icons=always"
+alias ls="ls --color=auto"
 
 # NVM configuration (ensure directory is portable)
 export NVM_DIR="${HOME}/.nvm"
