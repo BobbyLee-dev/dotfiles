@@ -35,7 +35,13 @@ bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
 # Aliases
-alias ls="ls --color=auto"
+
+# ---- Zoxide (better cd) ----
+eval "$(zoxide init zsh)"
+
+alias cd="z"
+# ---- Eza (better ls) -----
+alias ls="eza --icons=always"
 
 # NVM configuration (ensure directory is portable)
 export NVM_DIR="${HOME}/.nvm"
@@ -54,3 +60,5 @@ fi
 if [ -d "/opt/homebrew/share/zsh-syntax-highlighting" ]; then
   source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
