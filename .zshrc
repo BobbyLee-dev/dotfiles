@@ -53,3 +53,6 @@ export NVM_DIR="${HOME}/.nvm"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+
+# Export paths in priority order
+export PATH="$HOME/.composer/vendor/bin:$HOME/.npm-global/bin:$HOME/.local/share/nvim/mason/bin:$PATH"

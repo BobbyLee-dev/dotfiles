@@ -1,5 +1,5 @@
-emulate sh
-source ~/.profile
+# emulate sh
+# source ~/.profile
 emulate zsh
 
 
