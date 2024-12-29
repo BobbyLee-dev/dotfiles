@@ -49,8 +49,12 @@ return {
 					"-",
 				}
 			else
+				local default_ruleset = vim.fn.expand("~") .. "/.composer/phpcs/BobbysWP/ruleset.xml"
+				if vim.fn.filereadable(default_ruleset) == 0 then
+					vim.notify("Custom PHPCS ruleset 'BobbysWP' not found.", vim.log.levels.WARN)
+				end
 				return {
-					"--standard=WordPress",
+					"--standard=" .. default_ruleset,
 					"-",
 				}
 			end

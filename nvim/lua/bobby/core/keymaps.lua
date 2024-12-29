@@ -15,7 +15,11 @@ keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 -- delete single character without copying into register
 -- keymap.set("n", "x", '"_x')
 
--- increment/decrement numbers
+-- Map <leader>w to save the current file
+vim.keymap.set("n", "<leader>ss", ":w<CR>", { desc = "Write (save) file", silent = true })
+
+vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Write (save) file", silent = true })
+vim.keymap.set("i", "<leader>w", "<Esc>:w<CR>a", { desc = "Write (save) file in insert mode", silent = true })
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
 
