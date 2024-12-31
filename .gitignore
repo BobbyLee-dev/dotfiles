@@ -1,1 +1,25 @@
 .DS_Store
+# Ignore Composer cache (not necessary to version)
+.composer/cache/
+
+# Ignore auto-generated public keys (can be regenerated)
+.composer/keys.*
+
+# Exclude sensitive authentication tokens
+.composer/auth.json
+
+# Optional: Ignore vendor directory if you're not versioning installed dependencies
+.composer/vendor/
+
+# Optional: Ignore lock file if you don't want to version dependency state
+# Uncomment the following line if composer.lock is unnecessary
+# .composer/composer.lock
+
+# General ignore rules for backups, system files, or temporary files
+.composer/*.bak
+.composer/*.tmp
+.composer/*.swp
+.composer/*.swo
+
+*.log
+

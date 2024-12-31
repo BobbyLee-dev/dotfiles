@@ -63,6 +63,7 @@ return {
 		return {
 			formatters_by_ft = {
 				php = { "phpcbf" },
+				sh = { "shfmt" },
 				javascript = { "prettier" },
 				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
