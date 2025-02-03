@@ -50,8 +50,25 @@ return {
 							},
 							format = {
 								enable = true,
+								braces = "k&r",
 							},
 						},
+					},
+				})
+			end,
+
+			["html"] = function()
+				lspconfig["html"].setup({
+					capabilities = capabilities,
+					filetypes = { "html", "php" }, -- Add PHP to supported filetypes
+					init_options = {
+						configurationSection = { "html", "php", "css", "javascript" },
+						embeddedLanguages = {
+							css = true,
+							javascript = true,
+							php = true,
+						},
+						provideFormatter = true,
 					},
 				})
 			end,

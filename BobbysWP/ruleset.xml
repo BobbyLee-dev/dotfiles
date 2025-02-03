@@ -1,27 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="BobbysWP">
-    <description>Custom WordPress-like ruleset allowing short arrays</description>
-
-
+  <description>Custom WordPress-like ruleset allowing short arrays</description>
   <rule ref="WordPress">
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
-		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
-		<exclude name="Squiz.Commenting.FileComment.Missing"/>
-		<exclude name="WordPress.PHP.YodaConditions.NotYoda"/>
-		<exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"/>
-
-		<!-- PSR4 -->
-		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
-		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax"></exclude>
+    <exclude name="Generic.Commenting.DocComment.MissingShort"></exclude>
+    <exclude name="Squiz.Commenting.FileComment.Missing"></exclude>
+    <exclude name="WordPress.PHP.YodaConditions.NotYoda"></exclude>
+    <exclude name="WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase"></exclude>
+    <!-- PSR4 -->
+    <exclude name="WordPress.Files.FileName.InvalidClassFileName"></exclude>
+    <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"></exclude>
   </rule>
-
   <rule ref="WordPress-Core">
-		<exclude name="Generic.Arrays.DisallowShortArraySyntax"/>
-		<exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"/>
-		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
-		<exclude name="PSR12.Files.FileHeader.IncorrectOrder"/>
-		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"/>
-		<exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"/>
-	</rule>
-
+    <exclude name="Generic.Arrays.DisallowShortArraySyntax"></exclude>
+    <exclude name="Universal.Arrays.DisallowShortArraySyntax.Found"></exclude>
+    <exclude name="Generic.Commenting.DocComment.MissingShort"></exclude>
+    <exclude name="PSR12.Files.FileHeader.IncorrectOrder"></exclude>
+    <exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen"></exclude>
+    <exclude name="Squiz.Commenting.FileComment.SpacingAfterComment"></exclude>
+  </rule>
 </ruleset>
-

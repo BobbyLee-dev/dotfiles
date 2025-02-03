@@ -77,6 +77,7 @@ return {
 				graphql = { "prettier" },
 				liquid = { "prettier" },
 				lua = { "stylua" },
+				xml = { "xmlformatter" },
 			},
 			formatters = {
 				phpcbf = {

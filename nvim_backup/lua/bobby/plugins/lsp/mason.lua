@@ -43,6 +43,7 @@ return {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
 				"shfmt",
+				"xmlformatter",
 			},
 		})
 	end,
