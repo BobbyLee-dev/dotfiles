@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 19
-config.line_height = 1.3
+config.line_height = 1.5
 
 config.colors = {
 	foreground = "#CBE0F0",
